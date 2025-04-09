@@ -1,0 +1,110 @@
+/* Resetting some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Navigation Bar */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ff6f61;
+}
+
+/* Section Styling */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+.home {
+  background-color: #fff;
+  animation-delay: 0s;
+}
+
+.about {
+  background-color: #e8f0f2;
+  animation-delay: 0.5s;
+}
+
+.projects {
+  background-color: #fff;
+  animation-delay: 1s;
+}
+
+.contact {
+  background-color: #f4f4f9;
+  animation-delay: 1.5s;
+}
+
+/* Project Cards */
+.project-card {
+  background-color: #ff6f61;
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Animation for fading in sections */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 2s;
+}
